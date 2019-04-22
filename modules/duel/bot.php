@@ -9,8 +9,8 @@ header('Location: /duel/index.php?error=1');
 exit;
 }
 
-$needhp=$user['allhp']/10;
-if($user['hp']<$needhp){
+
+if($user['hp']<80){
 header('Location: /duel/index.php?error=1');
 exit;
 }

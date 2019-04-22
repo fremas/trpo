@@ -13,7 +13,7 @@ echo '</div><div class="foot_list"><div class="menuList">
 }
 
 # Вывод копирайта
-echo '<div class="foot">AlexHated &copy; 2018</div>';
+echo '<div class="foot">ApsenT &copy; 2019</div>';
 
 exit;
 

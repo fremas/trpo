@@ -89,10 +89,10 @@ DB::$dbs->query("INSERT INTO `journal` SET
 }
 
 //Счетчик минут до восстановления боя
-$battleregentime=$user['battle_regen_time']+180;
+$battleregentime=$user['battle_regen_time']+360;
 $count=$battleregentime-$time;
 if($user['battles']>=$user['allbattles']){$count=0;}
-if($count>180){$count=0;}
+if($count>360){$count=0;}
 if($count<0){$count=0;}
 $timetobattle=date('i:s', $count);
 
@@ -101,8 +101,7 @@ info($info);
 
 echo '<div class="head">';
 
-echo '<center>
-'.nick($user['id']).'  <img src="/images/icons/heart.png">'.$user['hp'].'<br/>
+echo '<center>'.nick($user['id']).'  <img src="/images/icons/heart.png">'.$user['hp'].'<br/>
 <img src="/images/icons/silver.png">'.n_f($user['silver']).' <img src="/images/icons/gold.png">'.n_f($user['gold']).' <img src="/images/icons/crystal.png">'.n_f($user['crystal']).'<br/>
 <img src="/images/icons/swords.png">'.$user['battles'].'/'.$user['allbattles'].' <img src="/images/icons/clock.png">'.$timetobattle.'
 </center>';
