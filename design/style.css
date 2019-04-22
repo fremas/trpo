@@ -1,0 +1,215 @@
+body {
+	color: #e2e2e2;
+	max-width: 400px;
+	margin: auto;
+	background: #050505;
+	font: 15px tahoma;
+}
+a:link, a:active, a:visited {
+color : #ffdf7c;
+text-decoration : none;
+}
+a:hover, a:focus {
+color : #fdf23b;
+text-shadow: 0 0 8px white;
+}
+img {
+	border-style: none;
+	vertical-align: middle;
+}
+input, select, textarea {
+	color: white;
+	padding: 2px;
+	margin-top: 1px;
+	margin-bottom: 1px;
+	border: 1px solid #181e18;
+	background: #536458;
+}
+.top {
+	background: url(images/top.gif);
+}
+.head {
+	color: #b3c3a1;
+	background-color: #181e18;
+	padding:4px;
+}
+.menu {
+	padding: 3px;
+	padding-top:8px;
+	background: url(images/f_bg.gif) repeat-x #263428;
+}
+.main_list {
+	background: #263428;
+}
+.foot_list {
+	background: url(images/f_bg.gif) repeat-x #263428;
+	padding-top: 4px;
+}
+.foot {
+	text-align: center;
+	padding: 4px;
+	padding-top: 7px;
+	background: #181e18 url(images/m_bg.gif) repeat-x top;
+}
+.auth {
+	padding: 3px;
+	border-top: 1px solid #c9c9c9;
+	border-bottom: 1px solid #d2d2d2;
+	background: url(images/auth.gif) repeat-x 50% top;
+}
+input[type="submit"] {
+	color: #fff;
+	height: 24px;
+	padding-right: 8px;
+	padding-left: 8px;
+	border: 1px solid #181e18;
+	border-radius: 2px;
+	background: url(images/bg.png) repeat-x center;
+}
+input[type="submit"]:hover {
+	color: gold;
+	height: 24px;
+	padding-right: 8px;
+	padding-left: 8px;
+	border: 1px solid gold;
+	border-radius: 2px;
+	background: #f8ba49 url(images/bg.png) repeat-x center;
+}
+.title {
+	background: url(images/title.gif) repeat-x 50%;
+	text-align: center;
+	font-weight: bold;
+	margin-top: 1px;
+	margin-bottom: 1px;
+	padding: 4px 2px;
+}
+}
+.link a {
+	padding-left: 18px;
+	background: url(icons/dir.png) no-repeat left center;
+}
+.banner {
+	margin-top: 1px;
+	margin-bottom: 1px;
+	padding: 2px;
+	border-top: 1px solid #e4e4e4;
+	border-bottom: 1px solid #e4e4e4;
+	background: #f4f4f4;
+}
+.ads_title {
+	text-align: right;
+	position: relative;
+	bottom: 14px;
+	margin-bottom: -14px;
+	border-bottom: 1px dotted #82d186;
+}
+.ads_title span {
+	color: #fdfdfd;
+	font-size: 11px;
+	text-align: center;
+	width: 47px;
+	height: 14px;
+	padding-right: 3px;
+	padding-left: 3px;
+	background: url(images/reklama.gif) no-repeat;
+}
+.ads {
+	margin-top: 1px;
+	margin-bottom: 1px;
+	padding: 2px;
+	background: #e7f6e7;
+}
+.ads a {
+	padding-left: 13px;
+	background: url(images/rek.gif) no-repeat left center;
+}
+.end {
+	text-align: center;
+	margin-top: 1px;
+	padding: 2px;
+	background: url(images/end.gif) repeat-x 50% top;
+}
+.block {
+	line-height: 20px;
+	margin-top: 1px;
+	margin-bottom: 1px;
+	padding: 3px;
+	border: 1px dotted #dbdbdb;
+	background: #f8f8f8;
+}
+.block a {
+	color: #a0a0a0;
+	padding: 1px 3px;
+	border: 1px solid #dfdfdf;
+	background: #f3f3f3 url(images/pagenav.gif) repeat-x 50% top;
+}
+.block a:hover {
+	padding: 1px 3px;
+	border: 1px solid #dfdfdf;
+	background: #e8e8e8 url(images/pagenav_hover.gif) repeat-x 50% top;
+}
+a#active {
+	color: #fff;
+	border: 1px solid #f3ab44;
+	background: #f7941d url(images/buttom.gif) repeat-x 50% top;
+}
+.error {
+	color: #e83839;
+	margin: 2px;
+	padding: 2px;
+	border: dotted 1px #e83839;
+}
+.info {
+	color: #33cc33;
+	margin: 2px;
+	padding: 2px;
+	border: dotted 1px #33cc33;
+}
+hr {
+	padding:0;
+	margin:5px 0;
+	height:0;
+	border-top:none;
+	border-bottom:#5c5853 dotted 1px;
+}
+.float-left {
+	float:left;
+	margin-right: 3px;
+}
+.pages {
+	background-color: #212923;
+	border: 1px solid #181e18;
+	padding: 3px;
+	margin: 2px;
+	display: inline-table;
+}
+.button {
+	color: #fff;
+	height: 22px;
+	padding-right: 8px;
+	padding-left: 8px;
+	border: 1px solid #181e18;
+	border-radius: 2px;
+	background: url(images/bg.png) repeat-x center;
+	display: inline-table;
+	margin: 2px;
+}
+.button:hover {
+	color: gold;
+	height: 22px;
+	padding-right: 8px;
+	padding-left: 8px;
+	border: 1px solid gold;
+	border-radius: 2px;
+	background: #f8ba49 url(images/bg.png) repeat-x center;
+	display: inline-table;
+	margin: 2px;
+}
+
+.menuList li {list-style:none;border-bottom:#5c5853 dotted 1px;margin:0;padding:5px;font-size:14px;}
+.menuList li:hover {background-color : rgba(200, 200, 200, 0.1);cursor: pointer;}
+.menuList li.original:hover {background-color:transparent;}
+.menuList li:last-child {border:0;}
+.menuList a {text-decoration:none;display:block;padding:5px;}
+.menuList img {padding:0 5px 0 0;}
+.menuList p {margin:0;padding:5px 0 5px 5px;}
