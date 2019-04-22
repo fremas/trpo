@@ -51,22 +51,24 @@ $info='Вы накопили максимальное количество се�
 
 //Система уровней
 if($user[exp]>=$user[needexp]){
-if($user[lvl]==50){
-DB::$dbs->query("UPDATE `users` SET `exp` = '$user[needexp]' WHERE `id` = '$user[id]' LIMIT 1");
-}else{
-$lvlup=1;
-$newlvl=$user[lvl]+1;
-$newexp=$user[exp]-$user[needexp];
-$newneedexp=$user[needexp]*2;
-$silver=1250*$newlvl;
-$plussilver=$user[silver]+$silver;
-$gold=5*$newlvl;
-$plusgold=$user[gold]+$gold;
-$allsilver=2500*$newlvl;
-$newallsilver=$user[allsilver]+$allsilver;
-if($newlvl>=5){
-$battlecost=3*($newlvl-4);
-}else{$battlecost=0;}
+	if($user[lvl]==50){
+		DB::$dbs->query("UPDATE `users` SET `exp` = '$user[needexp]' WHERE `id` = '$user[id]' LIMIT 1");
+	}else{
+		$lvlup=1;
+		$newlvl=$user[lvl]+1;
+		$newexp=$user[exp]-$user[needexp];
+		$newneedexp=$user[needexp]*2;
+		$silver=1250*$newlvl;
+		$plussilver=$user[silver]+$silver;
+		$gold=5*$newlvl;
+		$plusgold=$user[gold]+$gold;
+		$allsilver=2500*$newlvl;
+		$newallsilver=$user[allsilver]+$allsilver;
+		if($newlvl>=5){
+			$battlecost=3*($newlvl-4);
+		}else{
+			$battlecost=0;
+		}
 $info='Достигнут '.$newlvl.' уровень.<br/>';
 DB::$dbs->query("UPDATE users SET
  lvl = '$newlvl',
@@ -101,9 +103,9 @@ info($info);
 
 echo '<div class="head">';
 
-echo '<center>'.nick($user['id']).'  <img src="/images/icons/heart.png">'.$user['hp'].'<br/>
+echo '<center>'.nick($user['id']).'  <a href="/user/parameters.php?"><img src="/images/icons/heart.png">'.$user['hp'].'</a>
 <img src="/images/icons/silver.png">'.n_f($user['silver']).' <img src="/images/icons/gold.png">'.n_f($user['gold']).' <img src="/images/icons/crystal.png">'.n_f($user['crystal']).'<br/>
-<img src="/images/icons/swords.png">'.$user['battles'].'/'.$user['allbattles'].' <img src="/images/icons/clock.png">'.$timetobattle.'
+<a href="/duel/"><img src="/images/icons/swords.png">'.$user['battles'].'/'.$user['allbattles'].'</a> <img src="/images/icons/clock.png">'.$timetobattle.'
 </center>';
 
 }
